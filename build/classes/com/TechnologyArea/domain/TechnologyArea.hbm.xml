@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.TechnologyArea.domain">
+
+	<!-- OR mapping -->
+	<class name="TechnologyArea" table="TechnologyArea">
+		<id name="technologyId" type="string" column="technologyId">
+			<generator class="assigned" />
+		</id>
+		<property name="technologyTitle" type="string" column="technologyTitle"
+			length="200" />
+		<property name="technologyContent" type="string" column="technologyContent"
+			length="10000" />
+		<property name="fullTime" type="string" column="fullTime"
+			length="50" />
+		<property name="technologyDate" type="string" column="technologyDate"
+			length="50" />
+		<property name="technologyAuthor" type="string" column="technologyAuthor"
+			length="50" />
+		<property name="technologyPhotographer" type="string" column="technologyPhotographer"
+			length="50" />
+		<property name="technologySummary" type="string" column="technologySummary"
+			length="1000" />
+		<property name="html_path" type="string" column="html_path"
+			length="100" />
+		<property name="photo_path" type="string" column="photo_path"
+			length="100" />
+		<property name="photo_explain" type="string" column="photo_explain"
+			length="100" />
+
+		<property name="photoName" type="string" column="photoName"
+			length="100" />
+
+		<property name="htmlName" type="string" column="htmlName"
+			length="100" />
+
+	</class>
+
+</hibernate-mapping>

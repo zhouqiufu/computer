@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.DynamicNewsArea.domain">
+
+	<!-- OR mapping -->
+	<class name="DynamicNewsArea" table="DynamicNewsArea">
+		<id name="newsId" type="string" column="newsId">
+			<generator class="assigned" />
+		</id>
+		<property name="newsTitle" type="string" column="newsTitle"
+			length="200" />
+		<property name="newsContent" type="string" column="newsContent"
+			length="10000" />
+		<property name="fullTime" type="string" column="fullTime"
+			length="50" />
+		<property name="newsDate" type="string" column="newsDate"
+			length="50" />
+		<property name="newsAuthor" type="string" column="newsAuthor"
+			length="50" />
+		<property name="newsPhotographer" type="string" column="newsPhotographer"
+			length="50" />
+		<property name="newsSummary" type="string" column="newsSummary"
+			length="1000" />
+		<property name="html_path" type="string" column="html_path"
+			length="100" />
+		<property name="photo_path" type="string" column="photo_path"
+			length="100" />
+		<property name="photo_explain" type="string" column="photo_explain"
+			length="100" />
+
+		<property name="photoName" type="string" column="photoName"
+			length="100" />
+
+		<property name="htmlName" type="string" column="htmlName"
+			length="100" />
+
+	</class>
+
+</hibernate-mapping>
