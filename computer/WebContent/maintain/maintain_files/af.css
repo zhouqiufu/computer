@@ -1,0 +1,129 @@
+* {
+	font-family: "Segoe UI","Microsoft YaHei UI",Î¢ÈíÑÅºÚ,sans-serif;
+}
+body {
+	background: fixed rgb(32, 103, 178); margin: 0px; line-height: 1.5em; font-family: "Segoe UI","Microsoft YaHei UI"; font-size: 1em;
+}
+body img {
+	display: none;
+}
+h1 {
+	margin: 1em 20%; color: rgba(255, 255, 255, 1); font-weight: 200;
+}
+h3 {
+	margin: 1em 25%; color: rgba(255, 255, 255, 1); font-size: 0.75em; font-weight: normal;
+}
+p {
+	margin: 1em 20%; color: rgba(255, 255, 255, 1); text-indent: 2em;
+}
+a {
+	color: rgba(255, 255, 0, 0.8);
+}
+a:hover {
+	color: rgba(255, 255, 0, 1);
+}
+hr {
+	margin: 2em 0px; border: 1px solid rgba(255, 255, 255, 0.6); border-image: none;
+}
+form {
+	background: rgba(0, 0, 0, 0.1); margin: 1em auto 2em; padding: 1em; border-radius: 0.5em; display: block; max-width: 960px;
+}
+form a {
+	color: rgba(0, 95, 191, 0.8);
+}
+form a:hover {
+	color: rgba(0, 95, 191, 1);
+}
+form .notavalueable {
+	margin: 1em; text-align: center; color: rgb(255, 255, 255);
+}
+form img {
+	left: auto; top: auto; width: auto; height: auto; display: inline-block; position: relative; z-index: inherit;
+}
+#checkcodeimg {
+	margin: 0px 1em; top: 0.7em; width: 4em; height: 2em; display: inline; position: relative;
+}
+#checkcode {
+	width: 4em; display: inline;
+}
+.AFItem {
+	background: rgba(255, 255, 255, 0.6); width: 100%; color: rgba(0, 0, 0, 0.8); display: table;
+}
+.AFItem:hover {
+	background: rgba(255, 255, 255, 0.7);
+}
+.AFTitle.AFItem {
+	background: rgba(255, 255, 255, 0.8); padding: 1em; width: auto; color: rgb(0, 0, 0); display: block;
+}
+.AFItem .name {
+	padding: 1em; vertical-align: top; display: table-cell;
+}
+.AFItem .formitem {
+	padding: 1em; vertical-align: top; display: table-cell;
+}
+.AFItem .text {
+	padding: 1em; vertical-align: top; display: table-cell;
+}
+.AFItem .name {
+	background: rgba(255, 255, 255, 0.2); width: 20%; text-align: right;
+}
+:nth-child(2n+1).AFItem .name {
+	background: rgba(255, 255, 255, 0.1);
+}
+.AFItem .formitem {
+	width: 60%; padding-right: 2em;
+}
+:nth-child(2n).AFItem .formitem {
+	background: rgba(255, 255, 255, 0.1);
+}
+.AFItem .formitem div {
+	font-size: 0.75em;
+}
+.AFItem .text {
+	background: rgba(255, 255, 255, 0.2); width: 20%; line-height: 1.5em; font-size: 12px;
+}
+:nth-child(2n+1).AFItem .text {
+	background: rgba(255, 255, 255, 0.1);
+}
+.button {
+	text-align: center;
+}
+.button input {
+	background: rgba(255, 255, 255, 0.8); margin: 1em 1em 0px; padding: 0.5em 1em; border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; font-size: 0.8em; box-shadow: inset 0.5em 0.5em 2em rgba(255,255,255,1);
+}
+.button input:hover {
+	background: rgb(255, 255, 255);
+}
+.button input:active {
+	border: 1px solid rgba(0, 56, 115, 0.4); border-image: none; box-shadow: inset 0.5em 0.5em 2em rgba(0,0,0,0.2);
+}
+textarea {
+	background: rgba(255, 255, 255, 0.8); padding: 0.5em; border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; width: 100%; height: 4em; overflow: auto; font-size: 0.8em; box-shadow: inset 0.5em 0.5em 2em rgba(0,0,0,0.1);
+}
+textarea:focus {
+	background: rgb(255, 255, 255); border: 1px solid rgba(0, 56, 115, 0.4); border-image: none; box-shadow: none;
+}
+input[type=text] {
+	background: rgba(255, 255, 255, 0.8); padding: 0.5em; border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; width: 100%; font-size: 0.8em; display: block; box-shadow: inset 0.5em 0.5em 2em rgba(0,0,0,0.1);
+}
+input[type=password] {
+	background: rgba(255, 255, 255, 0.8); padding: 0.5em; border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; width: 100%; font-size: 0.8em; display: block; box-shadow: inset 0.5em 0.5em 2em rgba(0,0,0,0.1);
+}
+input[type=text]:focus {
+	background: rgb(255, 255, 255); border-color: rgba(0, 56, 115, 0.4); box-shadow: none;
+}
+input[type=password]:focus {
+	background: rgb(255, 255, 255); border-color: rgba(0, 56, 115, 0.4); box-shadow: none;
+}
+span.label {
+	font-size: 0.8em; margin-right: 1em; display: inline-block;
+}
+select {
+	background: rgba(255, 255, 255, 0.8); padding: 0.25em; border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; width: 50%; font-size: 0.8em; min-width: 12em; box-shadow: inset 0.5em 0.5em 2em rgba(0,0,0,0.1);
+}
+select option {
+	border: 1px solid rgba(0, 0, 0, 0.4); border-image: none; width: 100%; min-width: 12em;
+}
+select option:nth-child(2n+1) {
+	background: rgba(0, 0, 0, 0.02);
+}

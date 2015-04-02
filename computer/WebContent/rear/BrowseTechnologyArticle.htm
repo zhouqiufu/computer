@@ -1,0 +1,182 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+
+<title>计协技术交流区</title>
+
+<link rel="stylesheet" type="text/css" href="css/style_5_common.css">
+<link rel="stylesheet" type="text/css"
+	href="css/style_5_portal_view.css">
+
+<script language="javascript" type="text/javascript"
+	src="nb/js/jquery-1.4.2.js"></script>
+</head>
+
+<body id="nv_portal" class="pg_view" style="text-align:center;">
+
+	<!-- top 空行 -->
+	<div id="toptb" class="cl">
+		<div class="wp">
+			<div class="z">
+				<br>
+			</div>
+			<div class="y"></div>
+		</div>
+	</div>
+
+
+
+	<div id="hd">
+		<div class="wp">
+
+
+			<!-- logo -->
+			<h2>
+				<img src="css/logo.png" alt="计算机协会官方|计算机协会官方网站-广州城市职业学院" width="297"
+					height="118" border="0">
+			</h2>
+
+			<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+			
+			<div class="fastlg cl">
+				<span id="return_ls" style="display: none"></span>
+				<!-- <div class="y pns">在logo的右边显示</div> -->
+			</div>
+
+			<!-- 位置显示  -->
+			<div id="pt" class="bm cl" style="text-align:left;">
+				<span>您当前所在的位置是：<font color="red">技术文章页面</font></span>
+
+			</div>
+
+			<div id="pt" class="bm cl">
+				<div class="z"
+					style="width: 950px; height: auto; background-color: #452918;">
+					<!-- 导航条 代码 开始 -->
+					<style>
+                    li{
+						display:inline;
+						}
+					li a{
+						padding-left:40px;
+						padding-right:23px;
+						color:#FFF;}
+                    
+                    </style>
+
+					  <script type="text/javascript">
+                    $(function(){
+                    	
+						$.post('getHostName.jsp',function(data){
+							
+							$("#li_1").attr("href",$.trim(data));
+							$("#li_2").attr("href",$.trim(data)+"pagingAction.action?number=600");
+							$("#li_3").attr("href",$.trim(data)+"pagingAction.action?number=610");
+							$("#li_4").attr("href",$.trim(data)+"pagingAction.action?number=620");
+							$("#li_5").attr("href",$.trim(data)+"Organization/organization_index.jsp");
+							$("#li_6").attr("href",$.trim(data)+"CadreDisplay/cadre_index.jsp");
+							$("#li_7").attr("href",$.trim(data)+"maintain/maintain.jsp");
+							$("#li_8").attr("href",$.trim(data)+"leaveMessage/leaveMessage.jsp");
+							
+							});
+						
+						});
+                    
+                    
+                    </script>
+					<ul id="nav">
+
+						<li class="mainlevel" style="padding-left: 30px;"><a id="li_1"
+							target="_blank" href="">首页</a></li>
+
+						<li class="mainlevel" ><a target="_blank" id="li_2"
+							href="">新闻动态</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_3"
+							href="">通知公告</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_4"
+							href="">技术交流</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_5"
+							href="">机构设置</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_6"
+							href="">历届干部</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_7"
+							href="">网上报修</a></li>
+
+						<li class="mainlevel"><a target="_blank" id="li_8"
+							href="">留言建议</a></li>
+					</ul>
+
+					<!-- 代码 结束 -->
+				</div>
+			</div>
+
+			<div id="pt" class="bm cl">
+				<div class="z">
+					<br>
+				</div>
+			</div>
+
+
+			<style id="diy_style" type="text/css">
+#frameuJGQFI {
+	border: #cccccc 1px solid !important;
+}
+
+#portal_block_217 {
+	margin: 5px !important;
+}
+
+#portal_block_217 .dxb_bc a {
+	font-size: 14px !important;
+}
+</style>
+		<div class="bm vw">
+
+<div class="h hm">
+<h1 class="ph">
+<!-- 标题 -->
+###technologyTitle###
+</h1>
+<p class="xg1">
+###fullTime###<span class="pipe">|</span>
+供稿: ###technologyAuthor###<!-- 供稿人 -->
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+摄影: ###technologyPhotographer###<!-- 摄影人 -->
+</p>
+
+</div>
+
+
+
+<div class="s">
+  <div><strong>摘要</strong>:
+<!-- 摘要区 -->
+###technologySummary###
+</div></div>
+
+<div class="d"  style="text-align:justify;">
+
+
+###technologyContent###
+
+</div>
+
+
+<div class="s"></div>
+
+
+
+<!-- foot  -->
+<div class="o cl ptm pbm">
+<p style=" text-align:center;">最终解释权归广州城市职业学院计算机协会所有</p>
+</div>
+
+
+
+
+</div></div></div></body></html>
